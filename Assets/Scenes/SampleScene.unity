@@ -273,7 +273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &410087040
 Light:
   m_ObjectHideFlags: 0
@@ -519,6 +519,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dirLight: {fileID: 410087040}
   sphere: {fileID: 562801238}
+  timer: 1
 --- !u!65 &592435239
 BoxCollider:
   m_ObjectHideFlags: 0

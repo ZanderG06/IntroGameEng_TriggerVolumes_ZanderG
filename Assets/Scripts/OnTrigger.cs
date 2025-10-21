@@ -4,6 +4,7 @@ public class OnTrigger : MonoBehaviour
 {
     public Light dirLight;
     public GameObject sphere;
+    public float timer = 1.0f;
     
     private void OnTriggerEnter(Collider other)
     {
@@ -13,7 +14,18 @@ public class OnTrigger : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        dirLight.color = Random.ColorHSV();
+        timer += Time.deltaTime;
+        
+        if(timer >= 0.5f)
+        {
+            dirLight.color = Random.ColorHSV();
+        }
+        if(timer >= 1.0f)
+        {
+            dirLight.color = Random.ColorHSV();
+            timer = 0f;
+            return;
+        }
     }
 
     private void OnTriggerExit(Collider other)
