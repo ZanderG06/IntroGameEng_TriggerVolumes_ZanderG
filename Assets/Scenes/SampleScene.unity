@@ -517,7 +517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5da6c95aa9c6464386eba410d6e333f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dirLight: {fileID: 410087039}
+  dirLight: {fileID: 410087040}
   sphere: {fileID: 562801238}
 --- !u!65 &592435239
 BoxCollider:
@@ -534,7 +534,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
